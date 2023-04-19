@@ -51,6 +51,8 @@ const AllocationForm = (props) => {
                 <option value="Admin" name="admin">Admin</option>
                   </select>
 
+
+
                     <div className="input-group-prepend" style={{ marginLeft: '2rem' }}>
                 <label className="input-group-text" htmlFor="inputGroupSelect02">Allocation</label>
                   </div>
@@ -59,10 +61,13 @@ const AllocationForm = (props) => {
                 <option value="Reduce" name="Reduce">Reduce</option>
                   </select>
 
+                  <div className="input-group-prepend" style={{ marginLeft: '2rem' }}>
+                <label className="input-group-text" htmlFor="inputGroupSelect03">£</label>
+                  </div>
                     <input
                         required='required'
                         type='number'
-                        id='cost'
+                        id='inputGroupSelect03'
                         value={cost}
                         style={{ marginLeft: '2rem' , size: 10}}
                         onChange={(event) => setCost(event.target.value)}>
